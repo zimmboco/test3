@@ -16,8 +16,6 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -29,10 +27,10 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 
-public class SecondTest {
+public class FirstTest {
     private  ExecutorService executorService = Executors.newFixedThreadPool(10);
 
-    public SecondTest(ExecutorService executorService) {
+    public FirstTest(ExecutorService executorService) {
         this.executorService = executorService;
     }
 

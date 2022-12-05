@@ -1,4 +1,3 @@
-import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -10,7 +9,7 @@ public class Main {
         int runs = 1000;
         for (int i = 0; i < runs; i++) {
             long start = System.currentTimeMillis();
-            SecondTest secondTest = new SecondTest(executorService);
+            FirstTest secondTest = new FirstTest(executorService);
             secondTest.calculate("file/");
             long finish = System.currentTimeMillis();
             long result = finish - start;
